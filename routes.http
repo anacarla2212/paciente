@@ -1,0 +1,33 @@
+POST http://localhost:3333/consulta
+Content-Type: application/json
+
+{
+    "paciente": "Helena",
+    "peso": "5 kilos",
+    "sintomas": "Dor de Garganta",
+    "diagnostico": "Inflamação no ouvido"
+}
+
+###
+
+GET http://localhost:3333/consulta
+
+###
+
+GET http://localhost:3333/consulta?search=IFMS
+
+###
+
+PUT http://localhost:3333/b0d1e77b-5532-4f04-b935-9515f6cbb4c8
+Content-Type: application/json
+
+{
+    "paciente": "Heloisa",
+    "peso": "10 kilos",
+    "sintomas": "Dor de ouvido",
+    "diagnostico": "Inflamação no ouvido"
+}
+
+###
+
+DELETE http://localhost:3333/consultas/b0d1e77b-5532-4f04-b935-9515f6cbb4c8
